@@ -16,9 +16,9 @@ Include the cookbook in the run_list.
 Include code to set options for a package resource.
 
   include_recipe 'solaris_pkg'
-  pkg_sol_noask = node[:solaris_pkg][:nocheck]
+  pkg_sol_noask = node['solaris_pkg']['nocheck']
   options = '-a #{pkg_sol_noask} -r #{pkg_sol_noask}'
-  options << ' -G' unless node[:platform_version] == '5.9'
+  options << ' -G' unless node['platform_version'] == '5.9'
 
 Attributes
 ==========
