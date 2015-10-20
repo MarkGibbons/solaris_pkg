@@ -2,9 +2,13 @@
 
 This file is used to list changes made in each version of xymon.
 
-## 0.1.3:
+## 0.2.1:
 
 * Change the licensing
+
+## 0.2.0
+
+* cleaned up and made compatible with ChefCI pipeline
 
 ## 0.1.2:
 
