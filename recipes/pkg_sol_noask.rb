@@ -2,12 +2,12 @@
 #
 # Set up the no_ask response file.
 #
-# Cookbook Name:: splunkforwarder
+# Cookbook Name:: solaris_pkg
 # Recipe:: package
 # License:: Apache License 2.0
 #
 
-pkg_sol_noask = node[:solaris_pkg][:nocheck]
+pkg_sol_noask = node['solaris_pkg']['nocheck']
 
 template pkg_sol_noask do
   source 'nocheck.erb'
